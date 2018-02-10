@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+/*getting started stylesheet*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+The reset CSS overrides all the style rules applied by the browser stylesheet.
+If you don't want to reset all CSS values then comment the reset rules out*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*end of reset style rules---------------------------------------------------*/
+/*---------------------------------------------------------------------------*/
+
+
+/*default rule for all elements*/
+body {
+	background-color: black;
+	font-family: "Courier New", Courier, monospace;
+	color: #00ff7d;
+	font-size: 0.9em;
+	line-height: 1.2em;
+    background: url(images/bg.png) repeat-y;
+}
+    
+/*page section elements-----------------------------------------------------*/
+#wrapper {/*styles wrapper content*/
+	width: 70%;
+    /*centres wrapper content on the screen: */
+    margin-top: 3em;
+	margin-right: auto;
+	margin-left: auto;
+    float:left;
+	background-color: black;
+	padding: 2em;
+	max-width: 1300px;
+	min-width: 300px;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid #989898;
+    border-left: 1px solid #989898;
+	-moz-box-shadow: 0 0 2em #989898;
+	-webkit-box-shadow: 0 0 2em #989898;
+	box-shadow: 0 0 2em #989898;
+    background: url("images/terminal.png") repeat;
+    background-size: contain;
+}
+
+/* empty div for control panel image */
+#left {
+    width: 18%;
+    float: left;
+    background: url("images/control.png") no-repeat;
+    height:1000px;
+}
+
+form{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+
+header {/*styles all header elements*/
+	margin-top:8px;
+	margin-bottom:8px;
+    line-height: 4em;
+}
+
+article	{
+	margin-right: 2em;
+	overflow: scroll;
+}
+
+footer {/*styles article elements*/
+	padding: 1em 0em 1em;
+	text-align: center;
+	clear: both; /* clears the floats of the main and sidebar elements, allows the footer to stretch across the whole of the wrapper*/
+	border-top: 1px solid #b0b0b0;
+    width: 90%;
+    margin-right: auto;
+	margin-left: auto;
+}
+
+
+p	{/*styles paragraphs of text*/
+	margin-top: 1.1em; /* creates a bit of space between the paragraph and the content above it*/
+}
+
+/*text styles--------------------------------------------------------------*/
+h1	{/*styles main header*/
+	color: #00ff7d;
+	font-size: 4em;
+    text-shadow: 2px 2px 7px #00ff7d;
+    background-color: black;
+    border: 1px solid #00ff7d;
+    /*uses the drop shadow to create a glow around all h3 headings*/
+	-moz-box-shadow: 0 0 0.7em #00ff7d;
+	-webkit-box-shadow: 0 0 0.7em #00ff7d;
+	box-shadow: 0 0 0.7em #00ff7d;
+}
+
+h2	{/*styles level 2 sub-header*/
+	color: white;
+	font-size: 1.4em;
+	line-height: 1.6em;
+	padding-left: 0.7em;
+	border: 1px  solid #00ff7d;
+	border-top: 1px solid #00ff7d;
+    /*uses the drop shadow to create a glow around all h3 headings*/
+	-moz-box-shadow: 0 0 0.7em #00ff7d;
+	-webkit-box-shadow: 0 0 0.7em #00ff7d;
+	box-shadow: 0 0 0.7em #00ff7d;
+    background-color: black;
+}
+
+small{/*styles content within <small> pseudo element*/
+	font-size: 0.8em;
+}
+
+
+/*lists-------------------------------------------------------------------*/
+
+/*anchors-----------------------------------------------------------------*/
+
+/*tables-----------------------------------------------------------------*/
+
+/* images ---------------------------------------------------*/
+
+
+fieldset { /* styles fieldset to destiguish between each of them*/
+    border: 1px solid #00ff7d;
+	-moz-box-shadow: 0 0 0.7em #00ff7d;
+	-webkit-box-shadow: 0 0 0.7em #00ff7d;
+	box-shadow: 0 0 0.7em #00ff7d; /*uses the drop shadow to create a glow around the fieldset boxes*/
+    margin: 1em;
+    clear:both; /* clears all floats*/
+    color: #00ff7d;
+    background-color: black;
+    padding: 0.5em;
+    width: 81%;
+}
+
+input { /*styles the input boxes*/
+    background-color: black;
+    color: #00ff7d;
+    margin: 0.2em;
+    padding: 5px 5px 5px 20px
+}
+
+.title { /*styles the labels */
+    float:left; /*makes the labels float to the left of the corresponding input boxes */
+    margin:0.2em;
+    width: 10em; /*sets the width of the label so all labels and input boxes are aligned perfectly*/
+}
+
+legend {
+    margin:1em;
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 3px 3px 3px 3px #000;
+    background: black;
+}
+
+input.name{/*targets the name input and applies an image background*/
+    background-image: url(images/name.png);
+    background-repeat: no-repeat;
+}
+
+input#lastName{/*targets the name input and applies an image background*/
+    background-image: url(images/name.png);
+    background-repeat: no-repeat;
+}
+
+input#password{ /*targets the password input and applies an image background*/
+    background-image: url(images/pass.gif);
+    background-repeat: no-repeat;
+}
+
+input#conPassword{ /*targets the password input and applies an image background*/
+    background-image: url(images/pass.gif);
+    background-repeat: no-repeat;
+}
+
+textarea#text{ /*targets the textarea input and applies an image background*/
+    background-image: url(images/text.gif);
+    background-repeat: no-repeat;
+}
+
+.enterText{
+    border: 1px solid #00ff7d;
+	-moz-box-shadow: 0 0 0.7em #00ff7d;
+	-webkit-box-shadow: 0 0 0.7em #00ff7d;
+	box-shadow: 0 0 0.7em #00ff7d; /*uses the drop shadow to create a glow around the fieldset boxes*/
+    color: #00ff7d;
+    background-color: black;
+    margin-left: 1em;    
+    width: 80%;
+    height: 2em;
+}
+
+#loginBtn{
+    float: left;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+#or{
+    float: left;
+    display: inline-block;
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+}
+
+#regBtn{
+    float: left;
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+.buttons{
+    font-family: "Courier New", Courier, monospace;
+    background:black;
+    background-image: url(images/button.jpg);
+    background-size:cover;
+    color: #00ff7d;
+    padding: 0.5em;
+    border: 1px solid #00ff7d;
+	-moz-box-shadow: 0 0 0.7em #00ff7d;
+	-webkit-box-shadow: 0 0 0.7em #00ff7d;
+	box-shadow: 0 0 0.7em #00ff7d; /*uses the drop shadow to create a glow around the fieldset boxes*/
+    min-width: 6em;
+    height 2em;
+    margin-left: 1em;
+}
+
+article{
+    word-wrap: break-word;   
+}
+
+
+
+input.regSubmit {
+    font-family: "Courier New", Courier, monospace;
+}
+
+#chatBox, ::-webkit-scrollbar{width:9px;height:9px; margin: 0.2em;}
+#chatBox,  ::-webkit-scrollbar-button:start:decrement,
+#chatBox, ::-webkit-scrollbar-button:end:increment{display:block;height:0;background-color:transparent;}
+#chatBox,  ::-webkit-scrollbar-track-piece{background-color:#000;-webkit-border-radius:0;-webkit-border-bottom-right-radius:8px;-webkit-border-bottom-left-radius:8px;}
+#chatBox,  ::-webkit-scrollbar-thumb:vertical{height:50px;background-color:#18ac4c;-webkit-border-radius:8px;}
+#chatBox, ::-webkit-scrollbar-thumb:horizontal{width:50px;background-color:#18ac4c;-webkit-border-radius:8px;}
+
+#chatBox{
+    border: 1px solid #00ff7d;
+	-moz-box-shadow: 0 0 0.7em #00ff7d;
+	-webkit-box-shadow: 0 0 0.7em #00ff7d;
+	box-shadow: 0 0 0.7em #00ff7d; /*uses the drop shadow to create a glow around the fieldset boxes*/
+    color: #fff;
+    background-color: black;
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+    width: 69%;
+    height: 40em;
+    padding-left: 1em;
+    overflow: auto;
+    float:left;
+}
+
+#currentUsers{
+     border: 1px solid #00ff7d;
+	-moz-box-shadow: 0 0 0.7em #00ff7d;
+	-webkit-box-shadow: 0 0 0.7em #00ff7d;
+	box-shadow: 0 0 0.7em #00ff7d; /*uses the drop shadow to create a glow around the fieldset boxes*/
+    color: #fff;
+    background-color: black;
+    height: 40em;
+    width: 24%;
+    float:left;
+}

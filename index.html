@@ -1,0 +1,121 @@
+<!doctype html>
+<!--HTML5 doctype declaration -->
+
+<html>
+
+<head>
+
+<meta charset="utf-8"><!--metadata-->
+<title>Tempa Chat Login</title>
+    <!--title of page shown in browser bar--> 
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<!--JavaScript that enables Internet Explorer (version 8 and below) to recognise HTML5 elements -->
+
+	<script type="text/javascript">
+	document.createElement ('article')
+	document.createElement ('nav')
+	document.createElement ('aside')
+	document.createElement ('header')
+	document.createElement ('footer')
+	document.createElement ('main')
+	</script>
+<script type="text/javascript" src="script.js"></script>
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+    <!--imports stylesheet-->
+
+<link rel="shortcut icon" href="images/favicon.ico">
+    <!--applies favicon/icon to the url bar-->
+
+
+</head>
+
+<body> <!--body element where whole page content goes-->
+    
+    <div id="left"></div>
+    
+<div id="wrapper"> <!--The 'wrapper' div contains all the page content and can be styled -->
+
+
+<header> <!--header content at top of page-->
+    <h1 id="topTitle">Login/Register</h1>
+</header>
+<nav>
+	<ul class="menu">
+
+	</ul>
+</nav>	
+		
+<main >	
+<div id="loginFormDiv">	
+<header>
+	<h3>Login/Register</h3>
+</header>
+    
+<div id="btns">
+    <button id="loginBtn" class="buttons">Login</button>
+    <div id="or"><p>or</p></div>
+    <button id="regBtn" class="buttons">Register</button>
+</div>
+    
+    
+ <form name="form" id="form">   
+    <fieldset>
+		<legend id="formTitle">Login Details</legend>
+        <div class="login">
+			<label for="username" class="title">Username:</label>
+			<input type="text" id="username" class="name" name="username" placeholder="Username" required="required" />
+        </div>
+        <div class="login">
+			<label for="password" class="title">Password:</label>
+			<input type="password"  id="password" name="password" placeholder="Password" required="required"/>
+        </div>
+		<div id= "reg">
+		<div class="register">
+			<label for="password" class="title">Confirm:</label>
+			<input type="password"  id="conPassword" name="conPassword" placeholder="Password" required="required"/>
+        </div>
+        <div class="register">
+			<label for="firstName" class="title">First Name:</label>
+			<input type="text" id="firstName" class="name" name="firstName" placeholder="First Name" required="required" />
+        </div>
+        <div class="register">
+			<label for="lastName" class="title">Last Name:</label>
+			<input type="text"  id="lastName" name="lastName" placeholder="Last Name" required="required"/>
+        </div>
+        <div class="submit">
+			<input type="button" value="Register" id="regSubmit" class="buttons" />
+		</div>
+		</div>
+		<div class="submit">
+			<input type="button" value="Login" id="logSubmit" class="buttons"/>
+		</div>
+    </fieldset>
+</form>
+</div>
+ 
+<div id="chatroomFormDiv">
+	
+	<form id = "chatForm" name="message" action="">
+        <section id="chatBox"></section>
+        <section id="currentUsers"></section>
+		<input id = "userMsg" type = "text"  class="enterText" />
+		<input name = "submitMsg" type = "button" id = "submitMsg" value = "Send" class="buttons"/>
+	</form>
+	
+	<input name = "logoutButton" type = "button" id = "logoutButtonID" value = "Logout" class="buttons" />
+</div>
+
+</main>
+<!--Close main page content -->  
+
+<footer class = "bottom">
+<!--Footer content -->
+<small>2015, L. Marquick, J. O'Neill, S. Plume, C. Spreadbury &amp; J. Sleath </small>
+</footer>
+
+</div>
+<!--Close 'wrapper' div -->
+</body>
+<!--Close 'body' -->
+
+</html>
